@@ -4,7 +4,8 @@
 body {color: #555; }
 
 /* header */
-#header { border-bottom:0px solid #ddd }
+#header { border-bottom:0px solid #ddd; transition: all 0.3s; }
+#header.on { position: fixed; top: 0; left: 0; width: 100%; z-index: 999999; background: #fff; }
 #header > div { max-width:1200px; margin:0 auto; position:relative; }
 #header h1 { padding:20px 0; margin-left:70px }
 /* 블록요소들을 한줄로 정렬할때 float 정렬 대신 position:absolute를 사용할 때는
@@ -23,7 +24,7 @@ body {color: #555; }
 #header .nav .depth1 > li:nth-child(3).on .depth2 { height:38px; }
 #header .nav .depth1 > li:nth-child(4).on .depth2 { height:38px; }
 #header .nav .depth2 > li > a { display:block; padding:13px 0px; font-weight:bold; }
-#header .nav .depth2 > li:hover > a { background:#397dda; color:#fff;}
+#header .nav .depth2 > li.hover > a { background:#397dda; color:#fff;}
 
 
 /* section */
